@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+  head
+    title LangPlat
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato:300')
+    link(rel='stylesheet', href='css/app.css')
+  body
+    .container
+      .page-header
+        h1 LangPlat
+
+    #page
+      .jumbotron
+        .container
+          a.btn.btn-primary#open(href='#!') Load dictionary
+
+          h1 Create simple dictionaries.
+          p.
+            It's very simple to create dictionaries. You just need to create xml dict, encode it to Base64. That's all!
+          p Here is an example of dictionary:
+          pre
+            code.
+              &lt;?xml version="1.0"&gt;
+              &lt;lpdict xmlns="https://jrusl.github.io/LangPlat" from="English" fromcode="en" to="Piglatin"& tocode="pi"gt;
+                &lt;word from="honest" to="honestay" /&gt;
+                &lt;word from="button" to="uttonbay" /&gt;
+                &lt;word from="star" to="arstay" /&gt;
+              &lt;/lpdict&gt;
+
+          pre
+            code.
+              PD94bWwgdmVyc2lvbj0iMS4wIj4KPGxwZGljdCB4bWxucz0iaHR0cHM6Ly9qcnVzbC5naXRodWIuaW8vTGFuZ1BsYXQiIG5hbWU9IlBpZ2xhdGluIj4KICA8d29yZCBmcm9tPSJob25lc3QiIHRvPSJob25lc3RheSIgLz4KICA8d29yZCBmcm9tPSJidXR0b24iIHRvPSJ1dHRvbmJheSIgLz4KICA8d29yZCBmcm9tPSJzdGFyIiB0bz0iYXJzdGF5IiAvPgo8L2xwZGljdD4=
+
+    script(src='js/jquery.min.js')
+    script(src='js/bootstrap.min.js')
+    script(src='js/lp.js')

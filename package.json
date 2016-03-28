@@ -1,0 +1,29 @@
+{
+  "name": "languageplatform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrusl/LanguagePlatform.git"
+  },
+  "keywords": [
+    "language",
+    "site"
+  ],
+  "author": "jrusl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrusl/LanguagePlatform/issues"
+  },
+  "homepage": "https://github.com/jrusl/LanguagePlatform#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-typescript": "^2.12.1",
+    "gulp-uglify": "^1.5.3"
+  }
+}
